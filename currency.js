@@ -8,11 +8,13 @@ $(function () {
     On form submit, do the conversion and display the converted amount to the user
   */
 
-  $.get()
+  $.get('https://api.fixer.io/latest?base=CAD')
     .done(function (res) {
-      //
+      console.log(res.rates)
     })
     .fail(function (err) {
       //
     });
+
+    /*  add stuff here? */
 });
